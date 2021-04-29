@@ -8,6 +8,7 @@ class AuthorsController < ApplicationController
   end
 
   def create
+    params
     @author = Author.new(author_params)
     if @author.valid?
       @author.save
